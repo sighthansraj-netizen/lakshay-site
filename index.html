@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lakshay — Vlogs & Media</title>
+  <meta name="description" content="Lakshay — Moto vlogs, gear, and collaborations." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">LAKSHAY</a>
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#vlogs">Vlogs</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>LAKSHAY</h1>
+          <p class="tagline">Moto vlogs • Gear reviews • Brand collabs</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="#vlogs">Watch Vlogs</a>
+            <a class="btn ghost" href="#work">Work with me</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="assets/hero.jpg" alt="Lakshay on a motorcycle" />
+        </div>
+      </div>
+    </section>
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="about-inner">
+          <img class="avatar" src="assets/avatar.jpg" alt="Lakshay portrait" />
+          <div class="about-text">
+            <h2>About</h2>
+            <p>I’m Lakshay — I make cinematic moto vlogs and test riding gear. I help brands reach passionate riders with honest reviews and high-energy content.</p>
+            <ul class="bullets">
+              <li>YouTube vlogs & short-form clips</li>
+              <li>Helmet & accessories reviews</li>
+              <li>Sponsored rides & promotions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="vlogs" class="section vlogs">
+      <div class="container">
+        <h2>Latest Vlogs</h2>
+        <p class="muted">Click to watch on YouTube</p>
+        <div class="grid vlog-grid" id="vlogGrid">
+          <a class="card video-card" href="https://www.youtube.com/watch?v=VIDEO_ID_1" target="_blank" rel="noopener">
+            <img src="assets/thumb1.jpg" alt="Vlog thumbnail 1">
+            <div class="card-body">
+              <h3>Riding to the Hidden Dam — Rain Vlog</h3>
+              <p class="muted small">12 min • 20 Jul 2025</p>
+            </div>
+          </a>
+          <a class="card video-card" href="https://www.youtube.com/watch?v=VIDEO_ID_2" target="_blank" rel="noopener">
+            <img src="assets/thumb2.jpg" alt="Vlog thumbnail 2">
+            <div class="card-body">
+              <h3>Helmet Review: SBA-20 Deep Dive</h3>
+              <p class="muted small">8 min • 05 Jul 2025</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="work" class="section work">
+      <div class="container">
+        <h2>Work with Lakshay</h2>
+        <div class="grid work-grid">
+          <div class="card"><h3>Sponsor Integration</h3><p>Product shoutouts, review videos, and on-bike branding.</p></div>
+          <div class="card"><h3>Video Production</h3><p>Short promos, editing packages, and cinematic shot sequences.</p></div>
+          <div class="card"><h3>Event Rides</h3><p>Ride coverage, brand booths, and live posting.</p></div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="muted">For collabs, sponsorships or media — drop a line.</p>
+        <div class="contact-grid">
+          <div>
+            <p><strong>Email</strong><br><a href="mailto:lakshay@example.com">lakshay@example.com</a></p>
+            <p><strong>Socials</strong><br><a href="https://www.youtube.com/" target="_blank">YouTube</a> · <a href="https://instagram.com/" target="_blank">Instagram</a></p>
+          </div>
+          <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <label><span>Name</span><input type="text" name="name" required /></label>
+            <label><span>Email</span><input type="email" name="_replyto" required /></label>
+            <label><span>Message</span><textarea name="message" rows="4" required></textarea></label>
+            <button type="submit" class="btn primary">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> LAKSHAY • Built with ❤️</p>
+        <p class="muted small">Made for moto vlogs and brand collabs</p>
+      </div>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
