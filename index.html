@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,13 +17,15 @@
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#vlogs">Vlogs</a>
-        <a href="#work">Work</a>
+        <a href="#shop">Shop</a>
         <a href="#contact">Contact</a>
       </nav>
       <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">☰</button>
     </div>
   </header>
+
   <main>
+    <!-- Hero -->
     <section id="home" class="hero">
       <div class="container hero-grid">
         <div class="hero-text">
@@ -30,14 +33,24 @@
           <p class="tagline">Moto vlogs • Gear reviews • Brand collabs</p>
           <div class="hero-ctas">
             <a class="btn primary" href="#vlogs">Watch Vlogs</a>
-            <a class="btn ghost" href="#work">Work with me</a>
+            <a class="btn ghost" href="#shop">Shop</a>
+          </div>
+
+          <div class="social-row">
+            <!-- Social buttons: replace links with your real profiles -->
+            <a class="social" href="https://youtube.com/sighthansraj" target="_blank" rel="noopener" aria-label="YouTube">YouTube</a>
+            <a class="social" href="#" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+            <a class="social" href="#" target="_blank" rel="noopener" aria-label="X">X</a>
           </div>
         </div>
+
         <div class="hero-media">
           <img src="assets/hero.jpg" alt="Lakshay on a motorcycle" />
         </div>
       </div>
     </section>
+
+    <!-- About -->
     <section id="about" class="section about">
       <div class="container">
         <div class="about-inner">
@@ -54,56 +67,94 @@
         </div>
       </div>
     </section>
+
+    <!-- Vlogs -->
     <section id="vlogs" class="section vlogs">
       <div class="container">
         <h2>Latest Vlogs</h2>
-        <p class="muted">Click to watch on YouTube</p>
+        <p class="muted">Watch directly on YouTube or from the thumbnails below.</p>
+
+        <!-- Embedded latest video placeholder: replace VIDEO_ID_1 with an actual video id to show an embed -->
+        <div class="embed-wrap">
+          <iframe width="100%" height="420" src="https://www.youtube.com/embed/VIDEO_ID_1" title="Latest vlog" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
         <div class="grid vlog-grid" id="vlogGrid">
-          <a class="card video-card" href="https://www.youtube.com/watch?v=VIDEO_ID_1" target="_blank" rel="noopener">
+          <!-- Video cards (link to your channel or specific videos) -->
+          <a class="card video-card" href="https://youtube.com/sighthansraj" target="_blank" rel="noopener">
             <img src="assets/thumb1.jpg" alt="Vlog thumbnail 1">
             <div class="card-body">
-              <h3>Riding to the Hidden Dam — Rain Vlog</h3>
-              <p class="muted small">12 min • 20 Jul 2025</p>
+              <h3>Visit my YouTube channel for the full playlist</h3>
+              <p class="muted small">Subscribe for latest uploads</p>
             </div>
           </a>
-          <a class="card video-card" href="https://www.youtube.com/watch?v=VIDEO_ID_2" target="_blank" rel="noopener">
+
+          <a class="card video-card" href="https://youtube.com/sighthansraj" target="_blank" rel="noopener">
             <img src="assets/thumb2.jpg" alt="Vlog thumbnail 2">
             <div class="card-body">
-              <h3>Helmet Review: SBA-20 Deep Dive</h3>
-              <p class="muted small">8 min • 05 Jul 2025</p>
+              <h3>Helmet reviews, ride days, and more</h3>
+              <p class="muted small">Click to view</p>
             </div>
           </a>
         </div>
       </div>
     </section>
-    <section id="work" class="section work">
+
+    <!-- Shop -->
+    <section id="shop" class="section shop">
       <div class="container">
-        <h2>Work with Lakshay</h2>
+        <h2>Shop</h2>
+        <p class="muted">Merch and gear — order by sending an email (temporary checkout).</p>
+
         <div class="grid work-grid">
-          <div class="card"><h3>Sponsor Integration</h3><p>Product shoutouts, review videos, and on-bike branding.</p></div>
-          <div class="card"><h3>Video Production</h3><p>Short promos, editing packages, and cinematic shot sequences.</p></div>
-          <div class="card"><h3>Event Rides</h3><p>Ride coverage, brand booths, and live posting.</p></div>
+          <div class="card product">
+            <img src="assets/product1.jpg" alt="Product 1" style="width:100%;height:160px;object-fit:cover;border-radius:8px;margin-bottom:10px">
+            <h3>Signature Helmet Sticker</h3>
+            <p class="muted small">₹199</p>
+            <a class="btn primary" href="mailto:lakshay@example.com?subject=Order%20-%20Signature%20Helmet%20Sticker">Buy Now</a>
+          </div>
+
+          <div class="card product">
+            <img src="assets/product2.jpg" alt="Product 2" style="width:100%;height:160px;object-fit:cover;border-radius:8px;margin-bottom:10px">
+            <h3>Lakshay Logo T-shirt</h3>
+            <p class="muted small">₹799</p>
+            <a class="btn primary" href="mailto:lakshay@example.com?subject=Order%20-%20Lakshay%20T-shirt">Buy Now</a>
+          </div>
+
+          <div class="card product">
+            <img src="assets/product3.jpg" alt="Product 3" style="width:100%;height:160px;object-fit:cover;border-radius:8px;margin-bottom:10px">
+            <h3>Ride Sticker Pack</h3>
+            <p class="muted small">₹249</p>
+            <a class="btn primary" href="mailto:lakshay@example.com?subject=Order%20-%20Ride%20Sticker%20Pack">Buy Now</a>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- Contact: Google Form embed -->
     <section id="contact" class="section contact">
       <div class="container">
         <h2>Contact</h2>
-        <p class="muted">For collabs, sponsorships or media — drop a line.</p>
+        <p class="muted">For collabs, sponsorships or media — use the form below.</p>
+
         <div class="contact-grid">
           <div>
             <p><strong>Email</strong><br><a href="mailto:lakshay@example.com">lakshay@example.com</a></p>
-            <p><strong>Socials</strong><br><a href="https://www.youtube.com/" target="_blank">YouTube</a> · <a href="https://instagram.com/" target="_blank">Instagram</a></p>
+            <p><strong>Socials</strong><br>
+              <a href="https://youtube.com/sighthansraj" target="_blank">YouTube</a> ·
+              <a href="#" target="_blank">Instagram</a>
+            </p>
           </div>
-          <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-            <label><span>Name</span><input type="text" name="name" required /></label>
-            <label><span>Email</span><input type="email" name="_replyto" required /></label>
-            <label><span>Message</span><textarea name="message" rows="4" required></textarea></label>
-            <button type="submit" class="btn primary">Send</button>
-          </form>
+
+          <!-- Replace the iframe src with your Google Form's "embedded" URL -->
+          <div class="form-wrap">
+            <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <p class="muted small" style="margin-top:8px">Tip: To get your Google Form embed link — open the form → Send → &lt;&gt; (embed) → copy the src URL and paste it here (replace YOUR_FORM_ID).</p>
+          </div>
         </div>
       </div>
     </section>
+
     <footer class="site-footer">
       <div class="container footer-inner">
         <p>© <span id="year"></span> LAKSHAY • Built with ❤️</p>
@@ -111,6 +162,7 @@
       </div>
     </footer>
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>
